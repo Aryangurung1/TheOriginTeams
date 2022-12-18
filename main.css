@@ -1,1 +1,6 @@
-
+img{
+    position: relative;
+    left: 400px;
+    right: 400px;
+    margin: auto;
+}
