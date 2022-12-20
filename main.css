@@ -12,11 +12,15 @@ body {
     overflow: hidden;
 }
 
+
+
 nav {
     display: flex;
+    position: relative;
+    bottom: 30px;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -24,8 +28,6 @@ nav {
 .logo{
     width: 150px;
     height: 150px;
-    position: relative;
-    left: 150px;
 }
 
 nav ul li {
@@ -59,70 +61,7 @@ nav ul li a:hover {
     width: 100%;
     transition:width .3s;
 }
-/* .logo-section{
-    display:flex;
-    flex-direction: row;
 
-} */
-/* .first{
-    margin-left:60px;
-    flex:1;
-    padding-top:30px;
-    padding-left:40px;
-    padding-right:10px;
-} */
-.second{
-    width:500px;
-    margin-top: 20 px;
-    margin-left:10px;
-    padding-top:40px;
-    margin-right:50px;
-}
-.header{
-    display:flex;
-    /* border-bottom: solid 2px; */
-    /* border-color: rgb(192, 227, 252); */
-    z-index: 1;
-}
-.logo-sect{
-    width:600px;
-    display:flex;
-    
-}
-.menu{
-    
-    padding-left: 20px;
-    display:flex;
-    flex-direction:row;
-    position: relative;
-    top: 17px;
-   
-    
-}
-.menu-items{
-    flex:1;
-    padding-top:50px;
-    padding-right:30px;
-    margin-right:40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
-    font-weight:bold
-    
-    
-}
-.menu-items2{
-    width:300px;
-    flex:1;
-    padding-top:50px;
-    padding-right:30px;
-    margin-right:55px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
-    font-weight:bold
-}
-a{
-    color:rgb(65, 65, 65);
-}
 
 
 
