@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color:#187cff;
+    color:#0b74fc;
 }
 
 .hover-line::after{
@@ -53,7 +53,7 @@ nav ul li a:hover {
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #187cff;
+    background-color: #0b74fc;
     transition:width .3s;
 }
 
