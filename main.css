@@ -6,7 +6,8 @@
 }
 /* blackground color chosen as black as temporary */
 body {
-    background-color: #1b1212;
+    background-color: #ccccff;
+    z-index: -1;
 }
 /* nevigation bar are displayed as flex */
 nav {
@@ -33,7 +34,7 @@ nav ul li {
 }
 /* changing the color ,font ,text decolartionn of home , services, contact us and about  */
 nav ul li a {
-    color: rgb(216, 215, 215);
+    color: rgb(20, 18, 18);
     text-decoration: none;
     font-weight: bold;
     transition: .1s;
@@ -59,7 +60,7 @@ nav ul li a:hover {
 }
 /* main title of home page designing */
 .home h1 {
-    color: rgb(216, 215, 215);
+    color: black;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     text-align: center;
