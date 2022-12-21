@@ -1,19 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
 }
-
+/* blackground color chosen as black as temporary */
 body {
-    background-color: #fffff7;
-    font-family: Roboto,sans-serif;
-    overflow: hidden;
+    background-color: #1b1212;
 }
-
-
-
+/* nevigation bar are displayed as flex */
 nav {
     display: flex;
     position: relative;
@@ -24,44 +19,77 @@ nav {
     padding-left: 10%;
     padding-right: 10%;
 }
-
-.logo{
+/* logo size are defined */
+.logo {
     width: 150px;
     height: 150px;
 }
-
+/* modifyling unordered list*/
 nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 40px 40px;
 
 }
-
+/* changing the color ,font ,text decolartionn of home , services, contact us and about  */
 nav ul li a {
-    color: black;
+    color: rgb(216, 215, 215);
     text-decoration: none;
     font-weight: bold;
     transition: .1s;
+    font-family: 'Nunito', sans-serif;
 }
-
+/* making purple color when we hover */
 nav ul li a:hover {
-    color:#0b74fc;
+    color: #8d38ed;
 }
-
-.hover-line::after{
+/* maing purple color trasition when we cover */
+.hover-line::after {
     content: '';
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #0b74fc;
-    transition:width .3s;
+    background-color: #8d38ed;
+    transition: width .3s;
 }
 
-.hover-line:hover::after{
+.hover-line:hover::after {
     width: 100%;
-    transition:width .3s;
+    transition: width .3s;
 }
-
-
-
-
+/* main title of home page designing */
+.home h1 {
+    color: rgb(216, 215, 215);
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    font-size: 70px;
+}
+/* business and creting part of title color change */
+.home span {
+    color: #8d38ed;
+}
+/* after title there is image and description and we are using flex to design  */
+.section {
+    /* border: white 2px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 140px;
+    width: 100%;
+    height: 400px;
+    /* left: 150px; */
+    /* color: rgb(216, 215, 215); */
+}
+/* 3 images and description have its own border box */
+#part1,
+#part2,
+#part3 {
+    /* background-color: red; */
+    height: 100px;
+    display: block;
+    width: 350px;
+    height: 300px;
+}
