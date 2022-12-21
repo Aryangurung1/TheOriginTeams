@@ -95,3 +95,30 @@ nav ul li a:hover {
     height: 300px;
     transition:width .3s;
 }
+
+.title2{ /*This is the page 2 CSS*/
+color: black;
+font-family: 'Nunito', sans-serif;;
+text-align: center;
+position: relative;
+top: 70px;
+font-size: 30px;
+}
+
+.title3{
+    color: black;
+    font-family: 'Nunito', sans-serif;;
+    text-align: left;
+    position: relative;
+    top: 70px;
+    font-size: 30px;
+    }
+
+.title4{
+        color: black;
+        font-family: 'Nunito', sans-serif;;
+        text-align: right;
+        position: relative;
+        top: 70px;
+        font-size: 30px;
+        }
