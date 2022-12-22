@@ -4,6 +4,12 @@
     text-decoration: none;
     list-style: none;
 }
+
+/*Smooth Scrolling in page*/
+html{
+    scroll-behavior: smooth;
+}
+
 /* blackground color chosen as black as temporary */
 body {
     background-color: #ededed;
