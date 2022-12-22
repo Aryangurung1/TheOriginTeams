@@ -18,36 +18,45 @@ body {
 /* nevigation bar are displayed as flex */
 nav {
     display: flex;
-    position: relative;
-    bottom: 30px;
+    position: fixed;
     align-items: center;
     justify-content: space-around;
     padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
+    width: 100%;
+    height: 60px;
+    background-color: #252935; 
+    z-index: 6;
 }
 /* logo size are defined */
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: relative;
-    right: 80px;
+    right: 180px;
+    bottom: 4px;
 }
 /* modifyling unordered list*/
 nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 40px 40px;
+    position: relative;
+    bottom: 5px;
+    right: 250px;
+    z-index: 3;
 
 }
 /* changing the color ,font ,text decolartionn of home , services, contact us and about  */
 nav ul li a {
-    color: #434753;
+    color:#ededed;
     text-decoration: none;
     font-weight: bold;
     transition: .1s;
     font-family: 'Nunito', sans-serif;
 }
+
 .options{
     height: 100px;
     position: relative;
@@ -79,8 +88,12 @@ nav ul li a:hover {
     font-family: 'Nunito', sans-serif;
     text-align: center;
     position: relative;
-    top: 70px;
+    top: 50px;
     font-size: 70px;
+}
+.home{
+    position: relative;
+    top: 180px;
 }
 /* business and creting part of title color change */
 .home span {
@@ -89,8 +102,8 @@ nav ul li a:hover {
 /* after title there is image and description and we are using flex to design  */
 .bg{
     z-index: -1;
-    position: absolute;
-    bottom: 10px;
+    position:absolute;
+    bottom: 0px;
     width: 100%;
     height: 65rem;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1915' height='1076' preserveAspectRatio='none' viewBox='0 0 1915 1076'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2456%26quot%3b)' fill='none'%3e%3cpath d='M398.629%2c956.739C488.069%2c952.458%2c547.004%2c876.059%2c594.15%2c799.934C645.086%2c717.69%2c700.648%2c624.076%2c658.618%2c536.944C612.61%2c441.565%2c504.202%2c386.326%2c398.629%2c394.597C303.783%2c402.027%2c246.117%2c489.181%2c200.766%2c572.813C158.237%2c651.241%2c126.887%2c741.038%2c167.758%2c820.343C211.645%2c905.5%2c302.938%2c961.319%2c398.629%2c956.739' fill='rgba(141%2c 56%2c 237%2c 0.28)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M517.066%2c386.667C553.585%2c387.862%2c583.865%2c361.142%2c601.706%2c329.255C619.086%2c298.192%2c623.059%2c260.292%2c604.906%2c229.674C587.073%2c199.594%2c552.034%2c186.184%2c517.066%2c186.491C482.689%2c186.792%2c448.41%2c201.062%2c431.855%2c231.191C415.799%2c260.412%2c425.479%2c294.777%2c441.503%2c324.015C458.358%2c354.768%2c482.016%2c385.521%2c517.066%2c386.667' fill='rgba(141%2c 56%2c 237%2c 0.28)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M423.608%2c862.982C457.299%2c864.488%2c485.843%2c839.857%2c501.854%2c810.175C517.034%2c782.032%2c517.57%2c747.637%2c500.363%2c720.685C484.296%2c695.518%2c453.467%2c687.625%2c423.608%2c687.613C393.723%2c687.601%2c361.688%2c694.742%2c346.747%2c720.624C331.808%2c746.504%2c342.409%2c777.389%2c356.606%2c803.683C371.793%2c831.811%2c391.674%2c861.555%2c423.608%2c862.982' fill='rgba(141%2c 56%2c 237%2c 0.28)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1176.297%2c650.069C1269.377%2c643.45%2c1330.183%2c561.747%2c1373.969%2c479.343C1414.382%2c403.286%2c1437.116%2c314.08%2c1394.636%2c239.158C1351.677%2c163.391%2c1263.39%2c129.739%2c1176.297%2c130.71C1091.044%2c131.66%2c1013.442%2c172.943%2c966.226%2c243.933C912.622%2c324.527%2c878.625%2c425.431%2c923.094%2c511.404C970.478%2c603.013%2c1073.419%2c657.384%2c1176.297%2c650.069' fill='rgba(141%2c 56%2c 237%2c 0.28)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1559.778%2c1121.565C1633.199%2c1119.91%2c1693.498%2c1068.431%2c1728.194%2c1003.704C1760.878%2c942.73%2c1762.908%2c869.048%2c1726.75%2c810.068C1692.09%2c753.531%2c1626.044%2c731.532%2c1559.778%2c728.985C1487.548%2c726.208%2c1408.137%2c735.553%2c1368.986%2c796.315C1327.291%2c861.025%2c1338.726%2c945.209%2c1377.675%2c1011.607C1416.129%2c1077.161%2c1483.797%2c1123.278%2c1559.778%2c1121.565' fill='rgba(141%2c 56%2c 237%2c 0.28)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1553.929%2c480.007C1604.261%2c480.665%2c1651.463%2c458.628%2c1680.042%2c417.192C1713.548%2c368.612%2c1737.52%2c306.504%2c1709.373%2c254.635C1680.335%2c201.123%2c1614.809%2c185.357%2c1553.929%2c184.791C1491.798%2c184.213%2c1422.318%2c196.704%2c1393.397%2c251.697C1365.604%2c304.543%2c1399.061%2c365.121%2c1433.404%2c413.965C1461.645%2c454.13%2c1504.833%2c479.365%2c1553.929%2c480.007' fill='rgba(141%2c 56%2c 237%2c 0.28)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2456'%3e%3crect width='1915' height='1076' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 4s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
@@ -138,6 +151,8 @@ nav ul li a:hover {
 .team{
     width: 100%;
     height: 100rem;
+    position: relative;
+    top: 150px;
 }
 .meet{
     display: flex;
