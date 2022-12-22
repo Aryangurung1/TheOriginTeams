@@ -130,13 +130,18 @@ nav ul li a:hover {
     height: 300px;
     transition:width .3s;
 }
+.title0{
+    position: relative;
+    top: 220px;
+    height: 180px;
+}
 .title0 h2{
     color: #5a5f70;
     font-family: 'Nunito', sans-serif;;
     text-align: center;
-    position: relative;
-    top: 200px;
+    /* top: 100px; */
     font-size: 50px;
+    line-height: 50px;
 }
 .title0 p{
     text-align: center;
@@ -144,7 +149,7 @@ nav ul li a:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: relative;
-    top: 220px;
+    top: 15px;
 
 }
 
