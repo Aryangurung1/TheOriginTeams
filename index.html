@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
@@ -100,14 +101,14 @@
 
     <section class="team">
         <div class="title0">
-            <h2>Uncover and meet <br>
+            <h2 data-aos="zoom-in" data-aos-duration="1500">Uncover and meet <br>   <!--The animation of page 2-->
                 customer needs.</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+            <p data-aos="fade-right" data-aos-duration="1500">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> <!--The animation of page 2-->
                  Enim veritatis provident cum quia, magni hic.
             </p>
         </div>
         <div class="meet">
-            <div class="title1">
+            <div class="title1" data-aos="zoom-in" data-aos-duration="1000">        <!--The animation of page 2-->
                 <h5>Founders</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ut velit quidem nostrum, dolores
@@ -115,7 +116,7 @@
                         dolorem quo odio sint at perferendis!</p>
                     <a href="#">More</a>
             </div>
-            <div class="title2">
+            <div class="title2" data-aos="zoom-in" data-aos-duration="1000">        <!--The animation of page 2-->
                 <h5>Teams</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corporis vel commodi maiores ex quo.
                 </p>
@@ -123,6 +124,10 @@
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
