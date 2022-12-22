@@ -97,15 +97,15 @@ nav ul li a:hover {
 }
 
 .title2{ /*This is the page 2 CSS*/
-color: black;
-font-family: 'Nunito', sans-serif;;
-text-align: center;
-position: relative;
-top: 70px;
-font-size: 30px;
+    color: black;
+    font-family: 'Nunito', sans-serif;;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    font-size: 30px;
 }
 
-.title3{
+/*.title3{
     color: black;
     font-family: 'Nunito', sans-serif;;
     text-align: left;
@@ -114,11 +114,44 @@ font-size: 30px;
     font-size: 30px;
     }
 
+/*.title4{
+    color: black;
+    font-family: 'Nunito', sans-serif;;
+    text-align: right;
+    position: relative;
+    top: 70px;
+    font-size: 30px;
+    }
+*/
+
+
+.title3{
+    z-index: 222;
+    background: #8d38ed;
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    max-width: 200px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+    text-align:center;
+    position: relative;
+    top: 207px;
+    margin-left: 200px;
+    }
+
 .title4{
-        color: black;
-        font-family: 'Nunito', sans-serif;;
-        text-align: right;
-        position: relative;
-        top: 70px;
-        font-size: 30px;
-        }
+    z-index: 222;
+    background: #8d38ed;
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    max-width: 200px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+    text-align:center;
+    position: relative;
+    top: 20px;
+    
+    margin-left: 900px;
+    }
