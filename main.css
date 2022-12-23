@@ -216,3 +216,27 @@ nav ul li a:hover {
 .meet a:hover{
     color:#8d38ed;
 }
+
+.title3{
+    background-color: rgb(107, 107, 125);
+    justify-content: space-around;
+    position: relative;
+    height: 500px;  
+}
+
+.title3 h1{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+}
+
+.title3 p{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    width: 500px;
+    text-align: center;
+    margin-top: 41px;
+    display: block;
+    padding-left: 470px;
+}
