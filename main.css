@@ -221,22 +221,53 @@ nav ul li a:hover {
     background-color: rgb(107, 107, 125);
     justify-content: space-around;
     position: relative;
-    height: 500px;  
+    height: 800px;  
 }
 
 .title3 h1{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     font-family: 'Nunito', sans-serif;
     font-size: 50px;
 }
 
 .title3 p{
     position: relative;
+    display: block;
     font-family: 'Open Sans', sans-serif;
     width: 500px;
     text-align: center;
-    margin-top: 41px;
-    display: block;
-    padding-left: 470px;
+    top: 41px;
+    left: 470px;
 }
+
+.container1 h2 {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    bottom: 350px;
+    left: 200px;  
+    border-style: solid;
+}
+
+    .container2 p { 
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: block;
+    position: relative;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 32.4px;
+    font-weight: 0px;
+    text-size-adjust: 100%;
+    bottom: 550px;
+    left: 800px;
+    border-style: solid; 
+    }
