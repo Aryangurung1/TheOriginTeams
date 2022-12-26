@@ -732,4 +732,8 @@ nav ul li a:hover {
     color: white;
     background-color: rgb(107, 107, 107) ;
 }
+.fa-solid {
+    color: #8d38ed;
+}
+
 
