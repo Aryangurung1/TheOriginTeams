@@ -675,3 +675,61 @@ nav ul li a:hover {
     font-family: 'Nunito', sans-serif;
     color: #5a5f70;
 }
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+    line-height: normal;
+    text-align: center;
+}
+
+.bottom h2{
+    font-size: 25px;
+}
+
+
+
+.row{
+    position: relative;
+    top: 50px;
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    margin-left: 350px;
+    box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+}
+
+.comment-row input, .comment-row textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #ddd;
+    color: #777 ;
+}
+
+.comment-row button{
+    margin: 10px 0;
+    border: none;
+    background-color: #d0d0d0 ;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    color: #252935;
+    position: relative; 
+    left: 270px;
+}
+
+.comment-row button :hover{
+    color: white;
+    background-color: rgb(107, 107, 107) ;
+}
+
