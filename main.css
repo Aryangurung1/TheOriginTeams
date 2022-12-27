@@ -676,6 +676,7 @@ nav ul li a:hover {
     color: #5a5f70;
 }
 
+
 .bottom{
     display: flex;
     justify-content: space-around;
@@ -688,34 +689,103 @@ nav ul li a:hover {
     font-size: 25px;
 }
 
+.box{
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    right: 45px;
+}
 
 
 .row{
     position: relative;
-    top: 50px;
-    width: 50%;
-    border: 1px solid #ccc;
+    width: 23%;
+    border: 1px;
     margin: 50px 0;
-    padding: 10px 20px;
     font-family: 'Nunito', sans-serif;
     border-radius: 5px;
-    margin-left: 350px;
-    box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+    box-sizing: border-box;
+    margin-left: 90px;
 }
 
-.comment-row input, .comment-row textarea{
+.name-row input{
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
     outline: none;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif;
     border: 1px solid #ddd;
     color: #777 ;
 }
 
-.comment-row button{
+.row2{
+    position: relative;
+    width: 23%;
+    border: 1px;
+    margin: 50px 0;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.email-row input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #ddd;
+    color: #777 ;
+}
+
+.row3{
+    position: relative;
+    /* bottom:111.5px; */
+    width: 23%;
+    border: 1px;
+    margin: 50px 0;
+    /* padding:9.5px 500px; */
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 40px;
+}
+
+.subject-row input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #ddd;
+    color: #777 ;
+}
+
+.row4{
+    position: relative;
+    left: 200px;
+}
+.row4 textarea{
+    width: 70%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+.row4 button{
     margin: 10px 0;
     border: none;
     background-color: #d0d0d0 ;
@@ -724,12 +794,12 @@ nav ul li a:hover {
     font-size: 18px;
     border-radius: 3px;
     color: #252935;
-    position: relative; 
-    left: 270px;
+    position: relative;
+    top: 30px;
+    right: 600px;
 }
 
-.comment-row button :hover{
+.row4 button :hover{
     color: white;
     background-color: rgb(107, 107, 107) ;
 }
-
