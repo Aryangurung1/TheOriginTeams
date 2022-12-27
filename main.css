@@ -679,6 +679,8 @@ nav ul li a:hover {
 
 .bottom{
     display: flex;
+    position: relative;
+    top: 6rem;
     justify-content: space-around;
     font-family: 'Nunito', sans-serif;
     line-height: normal;
@@ -687,120 +689,64 @@ nav ul li a:hover {
 
 .bottom h2{
     font-size: 25px;
+
+}
+form {
+    position: relative;
+    top: 10rem;
+    left: 6rem;
+    height: 400px;
+    width: 75rem;
+
 }
 
-.box{
-    position: relative;
+    form input{
+    height: 40px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+.form{
     display: flex;
-    align-items:center;
     justify-content: space-around;
-    width: 100%;
-    right: 45px;
+    width: 1000px;
+    gap: 8rem;
+}
+form input:focus{
+    border: 1px solid #000;
+    outline: 0;
 }
 
-
-.row{
-    position: relative;
-    width: 23%;
-    border: 1px;
-    margin: 50px 0;
-    font-family: 'Nunito', sans-serif;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-left: 90px;
-}
-
-.name-row input{
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
-    border: 1px solid #ddd;
-    color: #777 ;
-}
-
-.row2{
-    position: relative;
-    width: 23%;
-    border: 1px;
-    margin: 50px 0;
-    font-family: 'Nunito', sans-serif;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-left: 20px;
-}
-
-.email-row input{
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
-    border: 1px solid #ddd;
-    color: #777 ;
-}
-
-.row3{
-    position: relative;
-    /* bottom:111.5px; */
-    width: 23%;
-    border: 1px;
-    margin: 50px 0;
-    /* padding:9.5px 500px; */
-    font-family: 'Nunito', sans-serif;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-left: 40px;
-}
-
-.subject-row input{
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
-    border: 1px solid #ddd;
-    color: #777 ;
-}
-
-.row4{
-    position: relative;
-    left: 200px;
-}
-.row4 textarea{
-    width: 70%;
+form textarea{
+    margin-top: 2rem;
+    width: 75rem;
     height: 150px;
     padding: 15px 20px;
-    margin-bottom: 10px;
     font-family: 'Nunito', sans-serif;
-    border: 1px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    box-sizing: border-box;
-
+    border: 1px solid #86b0b6;
 }
-.row4 button{
-    margin: 10px 0;
-    border: none;
-    background-color: #d0d0d0 ;
-    padding: 10px;
+
+form textarea:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+form button{
+    position: relative;
+    left: 35.5rem;
+    border: 0;
+    padding: 10px 30px;
+    background: #d0d0d0;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     border-radius: 3px;
-    color: #252935;
-    position: relative;
-    top: 30px;
-    right: 600px;
+    color: #fff;
+    top: 20px;
 }
 
-.row4 button :hover{
-    color: white;
-    background-color: rgb(107, 107, 107) ;
+form button:hover{
+    background-color: #718;
 }
-
