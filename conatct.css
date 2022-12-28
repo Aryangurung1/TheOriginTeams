@@ -12,7 +12,7 @@ html{
 
 /* blackground color chosen as black as temporary */
 body {
-    background-color: #ededed;
+    background-color: #ffffff;
     z-index: 2;
 }
 /* nevigation bar are displayed as flex */
@@ -92,10 +92,14 @@ nav ul li a {
     transition: width .3s;
 }
 
-h1{
+h4{
+    padding-top: 50px;
+    font-style: normal;
     margin-bottom: 2%;
     font-family:  Nunito, sans-serif;
-    font-size: xx-large;
+    font-size: 35px;
+    color: #5a5f70;
+    text-align:center;
 }
 
 p{
@@ -107,11 +111,7 @@ p{
     text-align: center;
 }
 
-.first{
-    padding-top: 25%;
-    height: 305px;
-    background-color: #ededed;
-}
+
 
 .fa-facebook{
     color: #8d38ed;
@@ -120,7 +120,7 @@ p{
 }
 
 .fa-facebook:hover{
-    color: #3b5998;
+    color: #a0a5b8;
 }
 
 .fa-twitter{
@@ -131,7 +131,7 @@ p{
 }
 
 .fa-twitter:hover{
-    color: #00acee;
+    color: #a0a5b8;
 }
 
 .fa-instagram{
@@ -142,10 +142,17 @@ p{
 }
 
 .fa-instagram:hover{
-    color: #8a3ab9;
+    color: #a0a5b8;
 }
 
 .detail{
-    padding: 50px;
+    padding-top:7%;
+    padding-bottom: 100px;
     text-align: center;
+    background-color: #ededed;
+}
+
+.formdiv{
+    text-align: center;
+    padding-top: 20px;
 }
