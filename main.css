@@ -768,3 +768,52 @@ form button:hover{
 .fa-pen-to-square{
     z-index: 2;
 }
+
+
+  
+.base{
+    width: 100%;
+    margin: auto;
+    background-color: #252935;
+    position: relative;
+    top: 290px;
+    height: 110px;
+}
+
+.base .base1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.base .base1 .base2 figure{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.base .base1 .base2 figure img{
+    width: 200px;
+    position: relative;
+    bottom: 95px;
+    right: 70px;
+}
+
+.base .base1 .base3 h2{
+    color: #d0d0d0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.base .base1 .base4 a{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    left: 250px;
+    width: 45px;
+    height: 45px; 
+}
