@@ -14,6 +14,7 @@ html {
 body {
     background-color: #ededed;
     z-index: 2;
+    height: 440rem;
 }
 
 /* nevigation bar are displayed as flex */
@@ -776,7 +777,7 @@ form button:hover{
     margin: auto;
     background-color: #252935;
     position: relative;
-    top: 290px;
+    top: 350px;
     height: 110px;
 }
 
