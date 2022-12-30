@@ -91,53 +91,78 @@ nav ul li a {
     background-color: rgb(250, 191, 81);
     transition: width .3s;
 }
-.container{     /*animation starts here*/
+.top_section .container{     /*animation starts here*/
     text-align:center;
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    width:100%
-}
-.container span{
-    color:#8d38ed;
+    width:60%;
+    border-radius: 150px;
+    border-bottom: solid 10px #8d38ed;
+    border-left: solid 10px #8d38ed;
     
+}
+
+.container span{
+    color:#252935;
     display:block;
 }
 .text1{
-    font-family:'Rubik Gemstones', cursive; 
-    color:#8d38ed;
+    font-family:'Nunito',sans-serif;
+    color:#252935;
     font-size:90px;
     font-weight:600;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-    background: #efecf9;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    
     position:relative;
     animation:text 3s 1;
 
 }
 .text2{
-    font-family: 'Sevillana', cursive;
-
-    font-size: 45px;
-    font-weight: bold;
-    color:black;
+    font-family:'Nunito',sans-serif;
+    font-size: 30px;
+    color:#8d38ed;
 
 
 }
 @keyframes text{
     0%{
-        color:#efecf9;
-        margin-bottom: -50px;
+        color:#252935;
+        
 
     }
     30%{
-        color: #8d38ed;
-        letter-spacing: 20px;
-        margin-bottom: -50px;
+        color:#252935;
+        letter-spacing: 10px;
+        
     }
     85%{
-        letter-spacing: 8px;
-        margin-bottom: -50px;
+        letter-spacing: 4px;
+
     }  
 }/*animation ends here*/
+
+.top_section img{ 
+    width:100%;
+    position:relative;
+}
+.top_section .overlay{
+    position:absolute;
+    top:80px;
+    right: 200px;
+    font-weight:bold;
+    text-align: left;
+    font-size:50px;
+
+    
+}
+/* color:#8d38ed;(purple)
+#252935 (black)
+ #ededed (white)
+ #61646d; (grey-description)
+ #5a5f70; (grey-heading)
+ */
+
+
