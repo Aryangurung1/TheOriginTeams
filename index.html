@@ -10,6 +10,7 @@
     <meta name="author" content="The Origin Teams">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <?!= include('JavaScript'); ?>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -260,14 +261,14 @@
         </section>
 
         <!-- Feedback section -->
-        <form action="#">
+        <form method="post" name="google-sheet">
             <div style="display: flex;">
                 <i class="fa-regular fa-user"></i>
-                <input type="text" name="full_name" placeholder="Your Name" style="width: 300px; display: block;">
+                <input type="text" name="Name" placeholder="Your Name" style="width: 300px; display: block;">
 
 
                 <i class="fa-regular fa-envelope env"></i>
-                <input type="email" name="email" placeholder="E-mail"
+                <input type="email" name="email" placeholder=" Your E-mail"
                     style="width: 300px; display: block; position: relative; left: 7rem;">
 
                 <!-- <i class="fa-sharp fa-solid fa-pen-to-square"></i> -->
@@ -278,9 +279,12 @@
             </div>
 
             <i class="fa-solid fa-pen-nib"></i>
-            <textarea class=" comment" placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
+            <textarea class=" comment" name="message" placeholder="Your Message"></textarea>
+            <!--yo adarsha le change gareko ho hai form section halka--> 
+            <button type="submit" name="submit"> Submit</button>
+           
         </form>
+       
 
     </div>
     <!-- 
