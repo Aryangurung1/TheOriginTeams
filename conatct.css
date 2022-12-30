@@ -151,8 +151,31 @@ p{
     text-align: center;
     background-color: #ededed;
 }
-
 .formdiv{
-    text-align: center;
-    padding-top: 20px;
+    margin-left: 27%;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+input,textarea{
+    color: #5a5f70;
+    width: 100%;
+    padding:10px;
+    border:1.5px solid #8d38ed;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button {
+    color: #ffffff;
+    background-color: #8d38ed;
+    font-size: 15px;
+    border: 0px solid #8d38ed;
+    border-radius: 100px;
+    padding: 15px 30px;
+    cursor: pointer
+}
+button:hover {
+    color: #ffffff;
+    background-color: #a9a5b8;
 }
