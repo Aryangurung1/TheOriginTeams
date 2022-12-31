@@ -182,3 +182,66 @@ nav ul li a {
     font-family: 'Nunito',sans-serif;
 
  }
+.block-container1{
+    display:flex;
+    flex-direction: row;
+    height:500px;
+    
+}
+
+.first-img{
+    width:400px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 100px;
+    box-shadow: 5px 5px 3px rgb(137, 129, 129);
+    
+
+}
+.first-img img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: fill;
+    height: 500px;
+    border-radius: 100px;
+    transition-delay: 200ms;
+    
+    
+
+}
+.first-block{
+    flex:1;
+    
+    margin-bottom: 100px;
+    margin-right: 50px;
+    padding-left: 30px;
+    padding-top: 40px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 3px rgb(137, 129, 129);
+    transition-delay: 400ms;
+
+}
+.block-container2{
+    width:800px;
+    height:500px;
+    margin-left:50px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-top: 40px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 3px rgb(137, 129, 129);
+
+}
+.block-container3{
+    width:800px;
+    height:500px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-top: 40px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 3px rgb(137, 129, 129);
+
+}
