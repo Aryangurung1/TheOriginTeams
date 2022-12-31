@@ -282,6 +282,7 @@
             <textarea class=" comment" name="message" placeholder="Your Message"></textarea>
             <!--yo adarsha le change gareko ho hai form section halka--> 
             <button type="submit" name="submit"> Submit</button>
+            
            
         </form>
        
@@ -317,6 +318,17 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbww_W1AciC8tfa3aSlUFPTrEdtCUUv0iksCZg9f55cHmz5MsysAmKOHYiWPLVqdUb03/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>
