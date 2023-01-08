@@ -14,7 +14,8 @@ html {
 body {
     background-color: #ededed;
     z-index: 2;
-    height: 440rem;
+    /* height: 200rem; */
+    
 }
 
 /* nevigation bar are displayed as flex */
@@ -209,7 +210,7 @@ nav ul li a:hover {
 }
 
 .title2 {
-    right: 100px;
+    right: 80px;
 }
 
 .meet h5 {
@@ -666,7 +667,7 @@ nav ul li a:hover {
 }
 .contact{
     position: relative;
-    height: 40rem;
+    height: 4rem;
     top: 100px;
 }
 .contact h2{
@@ -698,28 +699,42 @@ nav ul li a:hover {
 
 form {
     position: relative;
-    top: 10rem;
+    top: 25rem;
     left: 6rem;
     height: 400px;
     width: 75rem;
 
 }
+.flength {
+   position: relative;
+   right: 30px;
+}
 
-    form input{
+form input{
+    width: 100%;
     height: 40px;
-    padding: 0 20px;
+    padding: 1px 25px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #8d38ed;
 }
+
 .form{
     display: flex;
+    
     justify-content: space-around;
     width: 1000px;
     gap: 8rem;
 }
 
+.comment {
+    margin-left: 25px;
+}
+
+
 form textarea{
+    position: relative;
+    right: 15px;
     margin-top: 2rem;
     width: 75rem;
     height: 150px;
@@ -735,11 +750,10 @@ form button{
     left: 35.5rem;
     border: 0;
     padding: 10px 30px;
-    background: #d0d0d0;
+    background: #8d38ed;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     border-radius: 3px;
-    color: #8d38ed;
     top: 20px;
 }
 
@@ -756,65 +770,31 @@ form button:hover{
 
 .env{
     position: relative;
-    left: 131px;
+    left: 134px;
     top: 13px;
     z-index: 2;
 } 
 
 .fa-pen-nib{
     position: relative;
-    left: 3px;
+    left: 28px;
     top: 67px;
 }
+
 .fa-pen-to-square{
+    font-weight: 10;
+    position: relative;
     z-index: 2;
+    top: 12px;
+    left: 228px;
+
 }
 
-
-  
-.base{
+/* Footer section */
+footer {
+    background-color: rgb(119, 119, 119);
     width: 100%;
-    margin: auto;
-    background-color: #252935;
-    position: relative;
-    top: 350px;
     height: 110px;
-}
-
-.base .base1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-}
-
-.base .base1 .base2 figure{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-
-.base .base1 .base2 figure img{
-    width: 200px;
     position: relative;
-    bottom: 95px;
-    right: 70px;
-}
-
-.base .base1 .base3 h2{
-    color: #d0d0d0;
-    font-family: 'Nunito', sans-serif;
-}
-
-.base .base1 .base4 a{
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    left: 250px;
-    width: 45px;
-    height: 45px; 
+    top: 480px;
 }
