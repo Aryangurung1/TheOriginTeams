@@ -165,6 +165,7 @@ input,textarea{
     border:1.5px solid #8d38ed;
     border-radius: 5px;
     font-size: 15px;
+    resize: none;
 }
 button {
     color: #ffffff;
@@ -178,4 +179,23 @@ button {
 button:hover {
     color: #ffffff;
     background-color: #a9a5b8;
+}
+@media (max-width:415px){
+    #h4{
+        padding-top: 50px;
+        font-style: normal;
+        margin-bottom: 25px;
+        font-family:  Nunito, sans-serif;
+        font-size: 35px;
+        color: #5a5f70;
+        text-align:center;
+    }
+    div.formdiv{
+        margin-left: 10%;
+    }
+    form{
+        width: 90%;
+        max-width: 250px;
+    }
+
 }
