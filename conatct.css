@@ -199,3 +199,22 @@ button:hover {
     }
 
 }
+@media (max-width:550px){
+    #h4{
+        padding-top: 50px;
+        font-style: normal;
+        margin-bottom: 25px;
+        font-family:  Nunito, sans-serif;
+        font-size: 35px;
+        color: #5a5f70;
+        text-align:center;
+    }
+    div.formdiv{
+        margin-left: 10%;
+    }
+    form{
+        width: 90%;
+        max-width: 450px;
+    }
+
+}
