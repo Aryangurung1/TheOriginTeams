@@ -1,31 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- icon for socialmedia account -->
-    <script src="https://kit.fontawesome.com/9560fde36b.js" crossorigin="anonymous"></script>
-    <!-- font for heading and paragraph -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="about.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/Normal.png">
-    <title>About Us </title>
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/9560fde36b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        /*Smooth Scrolling in page*/
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* blackground color chosen as black as temporary */
+        body {
+            background-color: #ffffff;
+            z-index: 2;
+        }
+
+        /* nevigation bar are displayed as flex */
+        nav {
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 10px;
+            padding-left: 10%;
+            padding-right: 10%;
+            width: 100%;
+            height: 60px;
+            background-color: #A66CFF;
+            z-index: 6;
+        }
+
+        /* logo size are defined */
+        .logo {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            right: 180px;
+            bottom: 4px;
+        }
+
+        /* modifyling unordered list*/
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 40px 40px;
+            position: relative;
+            bottom: 5px;
+            right: 250px;
+            z-index: 3;
+
+        }
+
+        /* changing the color ,font ,text decolartionn of home , services, contact us and about  */
+        nav ul li a {
+            color: #ededed;
+            text-decoration: none;
+            font-weight: bold;
+            transition: .1s;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .options {
+            height: 100px;
+            position: relative;
+            left: 150px;
+        }
+
+        /* making purple color when we hover */
+        .hover-line:hover {
+            color: #8d38ed;
+        }
+
+        /* maing purple color trasition when we cover */
+        .hover-line::after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #8d38ed;
+            transition: width .3s;
+        }
+
+        .hover-line:hover::after {
+            width: 100%;
+            transition: width .3s;
+        }
+
+        .visited-line:visited {
+            color: rgb(250, 191, 81);
+        }
+
+        .visited-line::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(250, 191, 81);
+            transition: width .3s;
+        }
+
+        .pic {
+            height: 200px;
+            width: 200px;
+            border: 0 solid black;
+            border-radius: 100px;
+        }
+
+        .box {
+            margin-top: 40px;
+            padding: 20px 43px;
+            text-align: center;
+        }
+
+        .name {
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 10px;
+        }
+
+        .job {
+            font-family: sans-serif;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .fa-facebook {
+            color: #8d38ed;
+            font-size: 25px;
+            margin-top: 2%;
+        }
+
+        .fa-facebook:hover {
+            color: #a0a5b8;
+        }
+
+        .fa-linkedin {
+            color: #8d38ed;
+            font-size: 25px;
+            margin-top: 2%;
+            margin-left: 10px;
+        }
+
+        .fa-linkedin:hover {
+            color: #a0a5b8;
+        }
+
+        .fa-instagram {
+            color: #8d38ed;
+            font-size: 25px;
+            margin-top: 2%;
+            margin-left: 10px;
+        }
+
+        .fa-instagram:hover {
+            color: #a0a5b8;
+        }
+    </style>
 </head>
+<header>
+    <nav>
+        <figure>
+            <img src="img/Normal.png" class="logo">
+        </figure>
+        </div>
+        <div class="options">
+            <ul>
+                <li><a href="index.html" class="hover-line">Home</a></li>
+                <li><a href="services.html" class="hover-line">Services</a></li>
+                <li><a href="contact.html" class="hover-line">Contact Us</a></li>
+                <li><a href="About.html" class="visited-line">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
 <body>
-    <header>
-        <nav>
-            <figure>
-                <img src="img/Normal.png" class="logo">
-            </figure>
+    <div style="position: relative; top: 60px; background-color: #ededed; height: 100vh;">
+        <h1
+            style="word-spacing: 4px; font-size: 34px; font-family: 'Lato', sans-serif; text-align: center;position: relative; top: 10%;">
+            We Are <span style="color: #8d38ed;">The Origin Team</span></h1>
+        <h4
+            style="word-spacing: 3px; font-size: 18px; font-family: 'Lato', sans-serif; text-align: center;position: relative; top: 14%;">
+            We help business grow by creating high-quality websites</h4>
+        <p
+            style="color: rgb(87, 84, 84); text-align: center; font-family: 'Lato', sans-serif; display:inline-block; width: 40%; position: relative; bottom: 12%; left: 10%; line-height: 30px; word-spacing: 3px;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda corrupti sit porro numquam, blanditiis
+            ex labore veritatis quia quo excepturi ipsum? Debitis aliquid sed dolor cumque odio doloribus modi nesciunt,
+            dolorum eum ipsa enim, quae facilis aut ad placeat? Distinctio quibusdam facilis reiciendis omnis placeat
+            eum laudantium beatae quos cum deserunt reprehenderit alias adipisci laborum officia labore, nobis, enim ex
+            consectetur ipsum necessitatibus accusantium. Similique saepe pariatur distinctio laborum dolorem laudantium
+            doloribus incidunt omnis. Quidem porro, iusto aspernatur itaque delectus enim minima officiis optio at.
+            Obcaecati molestiae, ab quam architecto porro in eligendi, eveniet, et magni provident perferendis autem
+            quae?</p>
+        <img src="ab.png" style="height: 600px; position: relative; top: 10%; left: 15%;">
+    </div>
+    <div style="height: 100px;"></div>
+    <div>
+        <h1
+            style="margin-top: 15px; word-spacing: 4px; font-size: 34px; font-family: 'Lato', sans-serif; text-align: center;position: relative; top: 10%;">
+            Meet Our<span style="color: #8d38ed;"> Team</span></h1>
+    </div>
+    <div
+        style="width: 80%;position: relative;left: 10%; margin-top: 20px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;">
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="options">
-                <ul>
-                    <li><a href="index.html" class="hover-line">Home</a></li>
-                    <li><a href="services.html" class="hover-line">Services</a></li>
-                    <li><a href="contact.html" class="visited-line">Contact Us</a></li>
-                    <li><a href="about.css" class="hover-line">About</a></li>
-                </ul>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
             </div>
-        </nav>
-    </header>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="12.jpeg" class="pic">
+            <h3 class="name">Bidhan Shrestha</h3>
+            <p class="job">Web-Developer</p>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=100088433953540&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/theoriginteams?igshid=Yzg5MTU1MDY=" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+
+</html>
