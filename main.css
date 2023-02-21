@@ -823,3 +823,15 @@ footer h4 {
  .sociallinks i:hover {
     color: #8d38ed;
  }
+
+ @media screen and (max-width: 944px) {
+    
+    nav {
+        width: 100%;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-around;
+        height: 60px;
+    }
+ }
