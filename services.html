@@ -41,21 +41,18 @@
     </header>
 
     <section>
-        <div class="top_section">
+        <div class="top_section" style="margin-bottom: 460px;">
             <img class="background_img" src="img/services.jpg" style="opacity: 0.7;">
             <div class="container-service">
                 <span class="text-service">OUR SERVICES</span>
+                <div class="general-intro" style="position: relative;">
+                    <img src="img/waves.png" style="opacity: 1;">
+                 </div>
             
             </div>
         </div>
     </section>
-    <div class="entire-content">
-        <div class="general-intro">
-            <p data-aos="flip-up" data-aos-duration="1800" style="margin-top: -500px; margin-left: 280px; position: relative;">A group of committed individuals offering a range of services.<br>
-                Our company’s main vision and goal is “To help small and medium businesses and companies to foster growth and increase productivity 
-                through the use of modern marketing methodologies and fully-fledged interactive websites”.</p>
-        </div>
-
+        <!--
         <p class="main-line">Services offered by The Origin Teams<p>
 
         <div class="service-container">
@@ -138,7 +135,107 @@
             </div>
         </div>
 
+    </div>-->
+    <div class="slider-container" style="">
+    <div class="image-slider"><!--first-->
+        <div class="slide active">
+            <img src="img/web-development.jpg" alt="">
+            <div class="info">
+                <h2>Web Design and Development</h2>
+                <p>I literally don't know what goes here,
+                    however to fill the content henre we go
+                </p>
+            </div>
+        </div>
+        <div class="slide"><!--second-->
+            <img src="img/social-marketing.jpg" alt="">
+            <div class="info">
+                <h2>Social Media Marketing</h2>
+                <p>I literally don't know what goes here,
+                    however to fill the content henre we go
+                </p>
+            </div>
+        </div>
+        <div class="slide"><!--third-->
+            <img src="img/digital-marketing.jpg" alt="">
+            <div class="info">
+                <h2>Digital Marketing</h2>
+                <p>I literally don't know what goes here,
+                    however to fill the content henre we go
+                </p>
+            </div>
+        </div>
+        <div class="slide"><!--fourth-->
+            <img src="img/graphic-designing.jpg" alt="">
+            <div class="info">
+                <h2>Graphic Designing</h2>
+                <p>I literally don't know what goes here,
+                    however to fill the content henre we go
+                </p>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
     </div>
+    </div>
+    <script type="text/JavaScript">
+        var slides=document.querySelectorAll('.slide');
+        var btns=document.querySelectorAll('.btn');
+        let currentSlide=1;
+        //javascript for manual image slider  navigation
+        var manualNav= function(manual)
+        {
+            slides.forEach((slide)=>{
+              slide.classList.remove('active'); 
+              
+              btns.forEach((btn)=>{
+                btn.classList.remove('active');
+              });
+            });
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+        btns.forEach((btn,i)=>{
+            btn.addEventListener("click",()=>{
+                manualNav(i);
+                currentSlide=i;
+            });
+        });
+
+        //javascript for slider autoplay navigation
+        var repeat=function(activeClass){
+            let active=document.getElementsByClassName('active');
+            let i=1;
+
+            var repeater=()=>{
+                setTimeout(function(){
+                    [...active].forEach((activeSlide)=>{
+                        activeSlide.classList.remove('active');
+                    });
+
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++;
+
+                    if(slides.length == i){
+                        i=0;
+                    }
+                    if(i>=slides.length){
+                        return;
+                    }
+                    repeater();
+
+                              
+                },2500);
+            }
+            repeater();
+        }
+        repeat();
+    </script>
     <div class="content-division">
         <div class="block">
             <div class="first">
