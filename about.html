@@ -90,19 +90,30 @@
         }
 
         /* maing purple color trasition when we cover */
-        .hover-line::after {
-            content: '';
-            display: block;
-            width: 0%;
-            height: 2px;
-            background-color: #8d38ed;
-            transition: width .3s;
-        }
+        hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #8d38ed;
+    transition: width .3s;
+}
 
-        .hover-line:hover::after {
-            width: 100%;
-            transition: width .3s;
-        }
+.hover-line:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.visited-line:visited{
+    color: rgb(250, 191, 81);
+}
+.visited-line::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(250, 191, 81);
+    transition: width .3s;
+}
 
         .main {
             position: relative;
