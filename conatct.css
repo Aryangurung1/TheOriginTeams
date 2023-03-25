@@ -185,7 +185,7 @@ footer {
     width: 100%;
     height: 80px;
     position: relative;
-    top: 480px;
+    top: 50px;
 }
 
 footer h4 {
@@ -194,12 +194,12 @@ footer h4 {
     font-family: "0pen Sans", sans-serif;
     color: #868c9d;
     position: relative;
-    bottom: 6px;
+    bottom: 60px;
 }
 
 .sociallinks {
     position: relative;
-    bottom: 25px;
+    bottom: 110px;
     margin-left: 73rem;
     
 }
@@ -212,41 +212,3 @@ footer h4 {
  .sociallinks i:hover {
     color: #8d38ed;
  }
-@media (max-width:415px){
-    #h4{
-        padding-top: 50px;
-        font-style: normal;
-        margin-bottom: 25px;
-        font-family:  Nunito, sans-serif;
-        font-size: 35px;
-        color: #5a5f70;
-        text-align:center;
-    }
-    div.formdiv{
-        margin-left: 10%;
-    }
-    form{
-        width: 90%;
-        max-width: 250px;
-    }
-
-}
-@media (max-width:550px){
-    #h4{
-        padding-top: 50px;
-        font-style: normal;
-        margin-bottom: 25px;
-        font-family:  Nunito, sans-serif;
-        font-size: 35px;
-        color: #5a5f70;
-        text-align:center;
-    }
-    div.formdiv{
-        margin-left: 10%;
-    }
-    form{
-        width: 90%;
-        max-width: 450px;
-    }
-
-}
